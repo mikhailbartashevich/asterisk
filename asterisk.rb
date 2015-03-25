@@ -17,6 +17,8 @@ class Asterisk < Formula
   depends_on 'srtp'
   depends_on 'unixodbc'
 
+  brew link gmp mpfr libmpc glib iksemel
+
   def install
     openssl = Formula['openssl']
     sqlite = Formula['sqlite']
